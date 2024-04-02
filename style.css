@@ -1,107 +1,93 @@
-/* Prepare for visual chaos! */
+/* Base styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Comic Sans MS, fantasy; /* Embrace the silliness! */
-  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5); /* Add some red shadows! */
-  transform: rotateZ(2deg); /* Tilt the text slightly */
+  font-family: Arial, sans-serif;
 }
 
 body {
-  background-color: #FF0000; /* Fiery red background! */
-  animation: flicker 1s infinite alternate; /* Make it flicker! */
+  background-color: #f5f5f5;
 }
 
-@keyframes flicker {
-  from { opacity: 1; }
-  to { opacity: 0.8; }
-}
-
-/* Let's get wonky! */
 .scratchy-studios {
   width: 100vw;
   min-height: 100vh;
   display: flex;
-  flex-direction: column-reverse; /* Flip the order! */
+  flex-direction: column;
   align-items: center;
   padding: 50px;
-  transform: scale(1.1); /* Make it slightly bigger */
 }
 
-/* Header gone wild! */
+/* Header styles */
 .header {
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* Text aligns bottom! */
+  align-items: center;
   margin-bottom: 50px;
 }
 
 .logo {
-  font-size: 5em; /* Supersize it! */
+  font-size: 3em;
   font-weight: bold;
-  color: yellow; /* Shocking yellow text! */
-  text-decoration: underline wavy red 2px; /* Add a wavy underline */
+  color: #333;
   margin-right: 20px;
 }
 
 .tagline {
-  font-size: 2em; /* Bigger tagline */
-  color: #F0F; /* Pinkish text! */
-  text-transform: uppercase; /* All caps! */
+  font-size: 1.2em;
+  color: #888;
 }
 
-/* Main content in disarray! */
+/* Main content styles */
 .main {
-  width: 70%; /* Shrink main content */
-  max-width: 800px;
-  display: grid; /* Change to grid layout */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* Uneven columns! */
-  justify-content: space-around; /* Spread content unevenly */
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .about,
 .games,
 .contact {
-  padding: 30px; /* More padding! */
-  border: 5px dashed #F00; /* Thicker red border */
-  border-radius: 20px; /* More rounded corners */
-  margin-bottom: 10px; /* Less margin */
-  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+  width: 45%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .about h2,
 .games h2,
 .contact h2 {
-  font-size: 2em; /* Bigger headings */
-  margin-bottom: 20px;
-  text-align: center; /* Text centered! */
+  font-size: 1.8em;
+  margin-bottom: 15px;
 }
 
 .about p,
 .games p,
 .contact p {
-  line-height: 1.8; /* More space between lines */
-  font-style: italic; /* Italicize everything! */
+  line-height: 1.5;
 }
 
 .games {
   display: flex;
-  flex-direction: row; /* Change to row layout */
-  flex-wrap: nowrap; /* No wrapping allowed! */
-  overflow-x: scroll; /* Force horizontal scroll */
+  flex-direction: column;
 }
 
 .game-list {
-  list-style: disc inside url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWd7FoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwvPAAAAAxBQT/yAA9wAAAAgAAAAQgwICAAAAAAC1BAAAXCQAQAAADVAUhWJAAAABySURBVHlwAYAQAAAAAwCAIAAlJYC0AAAAASUVORK5CYII=")!important; /* Add a weird custom bullet point! */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .game-item {
-  margin-bottom: 20px; /* More margin */
+  margin-bottom: 10px;
 }
 
 .game-item a {
-  
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
